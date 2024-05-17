@@ -1,0 +1,14 @@
+.restaurants-list{
+    width: 70%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  .container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

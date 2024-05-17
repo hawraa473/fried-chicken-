@@ -4,10 +4,11 @@ const RestaurantForm = ({ onSubmit }) => {
   const [name, setName] = useState('');
   const [location, setLocation] = useState('');
   const [rating, setRating] = useState(1);
-
+  const [currentId, setCurrentId] = useState(2);
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmit({ name, location, rating });
+    const id = currentId + 1
+    onSubmit({ name, location, rating, id });
     setName('');
     setLocation('');
     setRating(1);
